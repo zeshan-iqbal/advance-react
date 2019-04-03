@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "devLinux": "pm2 start lib/server.js --watch --interpreter babel-node",
-    "dev": "nodemon --exec babel-node lib/server.js"
+    "dev": "nodemon --exec babel-node lib/server.js",
+    "webpack": "webpack -wd"
   },
   "babel": {
     "presets": [
@@ -17,17 +18,22 @@
     ]
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-react": "^7.12.4"
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^6.10.3"
   },
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
-    "pm2": "^3.4.1"
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "pm2": "^2.4.6",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "^2.5.0"
   }
 }
