@@ -6,7 +6,7 @@
   "author": "Zeeshan",
   "license": "MIT",
   "scripts": {
-    "devLinux": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "devLinux": "NODE_PATH=.lib/ pm2 start lib/server.js --watch --interpreter babel-node",
     "dev": "nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "test": "jest --watch"
